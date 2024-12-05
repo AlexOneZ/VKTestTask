@@ -21,9 +21,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let viewController = ViewController()
+        let apiLoadData = LoadData()
+        let loadDataUseCase = LoadRepositoriesUseCase(api: apiLoadData)
+        
+        
+        let storage = RepositoryStorage()
+        let manageRepositoriesUseCase = ManageRepositoriesUseCase(repositoryStorage: storage)
+        let editRepositoriesUseCase = EditRepositoryUseCase(repositoryStorage: storage)
+        
+        let viewController = ViewController(
+            loadRepositoriesUseCase: loadDataUseCase,
+            manageRepositoriesUseCase: manageRepositoriesUseCase,
+            editRepositoriesUseCase: editRepositoriesUseCase)
+        
         let navigationController = UINavigationController(rootViewController: viewController)
-
         window.rootViewController = navigationController
         window.overrideUserInterfaceStyle = .light
         self.window = window
