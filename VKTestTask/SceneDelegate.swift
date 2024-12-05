@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,8 +23,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let viewController = ViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
-        
+
         window.rootViewController = navigationController
+        window.overrideUserInterfaceStyle = .light
         self.window = window
         window.makeKeyAndVisible()
     }

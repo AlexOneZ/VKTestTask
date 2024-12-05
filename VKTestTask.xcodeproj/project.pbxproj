@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BB004E72D00D49B00A9BDFA /* FPSCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB004E62D00D49A00A9BDFA /* FPSCounter.swift */; };
+		5BCE969D2D00C080005A6B05 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE969C2D00C080005A6B05 /* RealmStorage.swift */; };
 		5BD4F49B2CFCB90F00EF27DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4F49A2CFCB90F00EF27DA /* AppDelegate.swift */; };
 		5BD4F49D2CFCB90F00EF27DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4F49C2CFCB90F00EF27DA /* SceneDelegate.swift */; };
 		5BD4F49F2CFCB90F00EF27DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4F49E2CFCB90F00EF27DA /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BB004E62D00D49A00A9BDFA /* FPSCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSCounter.swift; sourceTree = "<group>"; };
+		5BCE969C2D00C080005A6B05 /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
 		5BD4F4972CFCB90F00EF27DA /* VKTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD4F49A2CFCB90F00EF27DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BD4F49C2CFCB90F00EF27DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 		5BD4F4992CFCB90F00EF27DA /* VKTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				5BB004E62D00D49A00A9BDFA /* FPSCounter.swift */,
 				5BD4F49A2CFCB90F00EF27DA /* AppDelegate.swift */,
 				5BD4F49C2CFCB90F00EF27DA /* SceneDelegate.swift */,
 				5BD4F49E2CFCB90F00EF27DA /* ViewController.swift */,
@@ -75,6 +80,7 @@
 				5BD4F4B12CFE0A4E00EF27DA /* Repository.swift */,
 				5BD4F4B52CFE0F0900EF27DA /* Constants.swift */,
 				5BD4F4B72CFF295D00EF27DA /* LoadData.swift */,
+				5BCE969C2D00C080005A6B05 /* RealmStorage.swift */,
 			);
 			path = VKTestTask;
 			sourceTree = "<group>";
@@ -151,8 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD4F49F2CFCB90F00EF27DA /* ViewController.swift in Sources */,
+				5BB004E72D00D49B00A9BDFA /* FPSCounter.swift in Sources */,
 				5BD4F4B82CFF295D00EF27DA /* LoadData.swift in Sources */,
 				5BD4F4B62CFE0F0900EF27DA /* Constants.swift in Sources */,
+				5BCE969D2D00C080005A6B05 /* RealmStorage.swift in Sources */,
 				5BD4F49B2CFCB90F00EF27DA /* AppDelegate.swift in Sources */,
 				5BD4F4B22CFE0A4E00EF27DA /* Repository.swift in Sources */,
 				5BD4F49D2CFCB90F00EF27DA /* SceneDelegate.swift in Sources */,
@@ -316,6 +324,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,6 +357,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

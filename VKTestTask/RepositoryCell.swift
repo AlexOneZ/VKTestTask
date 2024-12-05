@@ -12,6 +12,7 @@ class RepositoryCell: UITableViewCell {
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.text = "Name"
+        label.textColor = .black
         return label
     }()
     
@@ -44,6 +45,8 @@ class RepositoryCell: UITableViewCell {
         contentView.addSubview(avatarImage)
         contentView.addSubview(nameLabel)
         contentView.addSubview(descriptionLabel)
+        
+        //contentView.backgroundColor = .white
         
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
             nameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -81,10 +84,12 @@ class RepositoryCell: UITableViewCell {
     
     func configure(with repository: Repository) {
         nameLabel.text = repository.name
-        descriptionLabel.text = repository.composedDescription 
+        descriptionLabel.text = repository.composedDescription
+        //descriptionLabel.text = repository.description
         //?? "No description"
         
         if let url = URL(string: repository.owner.avatar_url) {
+        //if let url = URL(string: repository.iconURL) {
             // Загружаею изображение асинхронно
             
             URLSession.shared.dataTask(with: url) { data, _, _ in
